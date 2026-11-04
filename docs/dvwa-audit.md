@@ -1,8 +1,10 @@
-# Teste 03 — Auditoria de Autenticação Web (DVWA)
+# Teste 03 — Web Login Brute Force Assessment (DVWA)
 
 ## 1. Objetivo
 
-Avaliar o mecanismo de autenticação de uma aplicação web vulnerável, identificando riscos associados a tentativas automatizadas de login e ausência de mecanismos de proteção.
+Avaliar a segurança do mecanismo de autenticação web do DVWA por meio de uma simulação controlada de tentativas automatizadas de descoberta de senhas.
+
+O objetivo é compreender como ataques de força bruta podem comprometer contas com senhas fracas e identificar mecanismos de proteção contra esse tipo de ameaça.
 
 ## 2. Ambiente de testes
 
@@ -10,39 +12,38 @@ Avaliar o mecanismo de autenticação de uma aplicação web vulnerável, identi
 |---|---|
 | Sistema de auditoria | Kali Linux |
 | Aplicação alvo | DVWA |
-| Ferramenta de análise | Navegador e ferramentas de desenvolvimento |
-| Ambiente | Laboratório VirtualBox |
-| Nível de segurança | Low |
+| Sistema hospedeiro | Metasploitable 2 |
+| Ferramentas de análise | Navegador e ferramentas de auditoria web |
+| Ambiente | VirtualBox — rede isolada |
 
 ## 3. Metodologia
 
-O teste será realizado em ambiente controlado, avaliando o comportamento do formulário de autenticação diante de credenciais inválidas e mecanismos de proteção disponíveis.
+A avaliação será realizada no módulo Brute Force do DVWA, utilizando credenciais fictícias e listas de senhas controladas.
 
-## 4. Identificação do formulário
+As etapas previstas são:
 
-A preencher após a inspeção da aplicação.
+1. Acessar a aplicação DVWA.
+2. Identificar o módulo Brute Force.
+3. Analisar o formulário e as requisições HTTP.
+4. Avaliar a resposta da aplicação a credenciais inválidas.
+5. Realizar uma simulação controlada de tentativas automatizadas.
+6. Registrar o comportamento da aplicação e os resultados.
 
-## 5. Testes de autenticação
+## 4. Análise do formulário
 
-A preencher após os testes.
+A preencher após a inspeção do módulo Brute Force.
+
+## 5. Execução do teste
+
+**Status:** Aguardando execução.
+
+Serão registrados os procedimentos, parâmetros e resultados observados durante a avaliação.
 
 ## 6. Evidências
 
-As capturas serão armazenadas na pasta images/.
+As capturas de tela serão armazenadas na pasta `images/`.
 
-## 7. Análise técnica
-
-A análise considerará validação de credenciais, respostas do servidor, proteção contra tentativas automatizadas e gerenciamento de sessões.
-
-## 8. Recomendações de segurança
-
-- Implementar limitação de tentativas de login.
-- Utilizar autenticação multifator.
-- Adotar políticas de senhas fortes.
-- Monitorar tentativas suspeitas.
-- Implementar controles de sessão.
-- Utilizar HTTPS.
-
-## 9. Conclusão
-
-A preencher após a análise dos resultados.
+- Identificação do módulo Brute Force.
+- Análise do formulário de autenticação.
+- Simulação de tentativas de login.
+- Resultado da
